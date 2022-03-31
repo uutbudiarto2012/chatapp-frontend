@@ -1,0 +1,50 @@
+.form-chat {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  .input-container {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    .input-form {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      resize: none;
+      font-size: 16px;
+      height: 100%;
+      width: 100%;
+      font-family: OpenSand, sans-serif;
+      padding: 5px;
+    }
+    .send-container {
+      button {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .next-action {
+    button {
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

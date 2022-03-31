@@ -1,0 +1,128 @@
+.message-wrapper {
+  min-height: calc(100vh - 120px);
+  padding: 20px 80px;
+  // padding: 20px 0;
+  .message-box {
+    display: flex;
+    justify-content: flex-start;
+    &.me {
+      justify-content: flex-end;
+      .message-item {
+        display: flex;
+        margin: 5px 0;
+        padding: 5px;
+        max-width: 60%;
+        .otherAvatar {
+          margin-right: 10px;
+        }
+        .text-container {
+          background-color: rgba(255, 254, 188, 0.8);
+          padding: 10px;
+          border-radius: 10px 10px 0 10px;
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+          color: #000;
+          .time-message {
+            font-size: 12px;
+            font-weight: 600;
+            color: rgb(0, 0, 0);
+          }
+        }
+      }
+    }
+    .message-item {
+      display: flex;
+      margin: 5px 0;
+      padding: 5px;
+      max-width: 60%;
+      align-items: flex-end;
+      .otherAvatar {
+        margin-right: 10px;
+      }
+      .text-container {
+        background-color: rgba(255, 247, 247, 0.9);
+        box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.2);
+        padding: 6px;
+        border-radius: 10px 10px 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .time-message {
+          font-size: 12px;
+          font-weight: 600;
+          color: rgb(6, 2, 29);
+        }
+      }
+    }
+  }
+}
+
+.text-message {
+  white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+  white-space: -webkit-pre-wrap; /* Chrome & Safari */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: pre-wrap; /* CSS3 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  word-break: break-all;
+  white-space: normal;
+}
+
+@media (max-width: 992px) {
+  .message-wrapper {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 786px) {
+  .message-wrapper {
+    padding: 5px 0;
+    min-height: calc(100vh - 160px);
+    .message-box {
+      display: flex;
+      justify-content: flex-start;
+      &.me {
+        justify-content: flex-end;
+        .message-item {
+          display: flex;
+          margin: 5px 0;
+          padding: 5px;
+          max-width: 80%;
+          .text-container {
+            background-color: rgba(255, 254, 188, 0.8);
+            padding: 10px;
+            border-radius: 10px 10px 0 10px;
+            color: #000;
+            .time-message {
+              font-size: 12px;
+              font-weight: 600;
+              color: rgb(0, 0, 0);
+            }
+          }
+        }
+      }
+      .message-item {
+        display: flex;
+        margin: 5px 0;
+        padding: 5px;
+        max-width: 80%;
+        align-items: flex-end;
+        .otherAvatar {
+          margin-right: 10px;
+        }
+        .text-container {
+          background-color: rgba(255, 247, 247, 0.9);
+          padding: 6px;
+          border-radius: 10px 10px 10px 0;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          .time-message {
+            font-size: 12px;
+            font-weight: 600;
+            color: rgb(6, 2, 29);
+          }
+        }
+      }
+    }
+  }
+}
